@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" id="form"  autocomplete="off">
+                    <div>
+                        <label>ID</label>
+                        <input type="text" name="Id" id="Id">
+                    </div>
+                  <div>
+                        <label>Name</label><label class="validation-error hide" id="fullNameValidationError"> *** Enter Valid Data *** </label>
+                        <input type="text" name="fullName" id="fullName">
+                      
+                    </div>
+                    <div>
+                        <label>EMP Code</label><label class="validation-error hide" id="empIsNumberValidationError"> *** Enter Valid Empcode *** </label>
+                        <input type="text" name="empCode" id="empCode">
+                    </div>
+                    <div>
+                        <label>Salary</label><label class="validation-error hide" id="salIsNumberValidationError"> *** Enter Valid Salary *** </label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>City</label><label class="validation-error hide" id="cityintextValidationError"> *** Enter Valid Data *** </label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" id="mySubmit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>EMP Code</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+   
+    <script src="java.js"></script>
+    
+</body>
+</html>
